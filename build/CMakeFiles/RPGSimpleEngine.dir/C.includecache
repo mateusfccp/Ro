@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/game.h
+SDL2/SDL.h
+-
+
+/home/mateusfccp/Projects/SDL2/rpg_simple_engine/src/game.c
+stdlib.h
+-
+game.h
+/home/mateusfccp/Projects/SDL2/rpg_simple_engine/src/game.h
+
+/home/mateusfccp/Projects/SDL2/rpg_simple_engine/src/main.c
+stdio.h
+-
+stdlib.h
+-
+SDL2/SDL.h
+-
+game.h
+/home/mateusfccp/Projects/SDL2/rpg_simple_engine/src/game.h
+
+/home/mateusfccp/Projects/SDL2/rpg_simple_engine/src/scene.c
+

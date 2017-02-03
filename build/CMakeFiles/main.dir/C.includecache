@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mateusfccp/Projects/SDL2/rpg_simple_engine/src/main.c
+stdio.h
+-
+stdlib.h
+-
+SDL2/SDL.h
+-
+
