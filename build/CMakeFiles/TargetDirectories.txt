@@ -1,3 +1,0 @@
-/home/mateusfccp/Projects/SDL2/rpg_simple_engine/build/CMakeFiles/rebuild_cache.dir
-/home/mateusfccp/Projects/SDL2/rpg_simple_engine/build/CMakeFiles/edit_cache.dir
-/home/mateusfccp/Projects/SDL2/rpg_simple_engine/build/CMakeFiles/RPGSimpleEngine.dir

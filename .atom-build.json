@@ -1,6 +1,0 @@
-{
-	"cmd": "mkdir build ; cd build && cmake .. --debug-output && make -j4",
-	"name": "cmake",
-	"sh": true,
-	"cwd": "{PROJECT_PATH}"
-}
