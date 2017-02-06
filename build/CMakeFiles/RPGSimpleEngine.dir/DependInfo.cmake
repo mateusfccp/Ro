@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/home/mateusfccp/Projects/SDL2/rpg_simple_engine/src/engine.c" "/home/mateusfccp/Projects/SDL2/rpg_simple_engine/build/CMakeFiles/RPGSimpleEngine.dir/src/engine.c.o"
   "/home/mateusfccp/Projects/SDL2/rpg_simple_engine/src/game.c" "/home/mateusfccp/Projects/SDL2/rpg_simple_engine/build/CMakeFiles/RPGSimpleEngine.dir/src/game.c.o"
   "/home/mateusfccp/Projects/SDL2/rpg_simple_engine/src/main.c" "/home/mateusfccp/Projects/SDL2/rpg_simple_engine/build/CMakeFiles/RPGSimpleEngine.dir/src/main.c.o"
   "/home/mateusfccp/Projects/SDL2/rpg_simple_engine/src/scene.c" "/home/mateusfccp/Projects/SDL2/rpg_simple_engine/build/CMakeFiles/RPGSimpleEngine.dir/src/scene.c.o"

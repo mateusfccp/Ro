@@ -123,6 +123,33 @@ RPGSimpleEngine/fast:
 	$(MAKE) -f CMakeFiles/RPGSimpleEngine.dir/build.make CMakeFiles/RPGSimpleEngine.dir/build
 .PHONY : RPGSimpleEngine/fast
 
+src/engine.o: src/engine.c.o
+
+.PHONY : src/engine.o
+
+# target to build an object file
+src/engine.c.o:
+	$(MAKE) -f CMakeFiles/RPGSimpleEngine.dir/build.make CMakeFiles/RPGSimpleEngine.dir/src/engine.c.o
+.PHONY : src/engine.c.o
+
+src/engine.i: src/engine.c.i
+
+.PHONY : src/engine.i
+
+# target to preprocess a source file
+src/engine.c.i:
+	$(MAKE) -f CMakeFiles/RPGSimpleEngine.dir/build.make CMakeFiles/RPGSimpleEngine.dir/src/engine.c.i
+.PHONY : src/engine.c.i
+
+src/engine.s: src/engine.c.s
+
+.PHONY : src/engine.s
+
+# target to generate assembly for a file
+src/engine.c.s:
+	$(MAKE) -f CMakeFiles/RPGSimpleEngine.dir/build.make CMakeFiles/RPGSimpleEngine.dir/src/engine.c.s
+.PHONY : src/engine.c.s
+
 src/game.o: src/game.c.o
 
 .PHONY : src/game.o
@@ -213,6 +240,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... RPGSimpleEngine"
+	@echo "... src/engine.o"
+	@echo "... src/engine.i"
+	@echo "... src/engine.s"
 	@echo "... src/game.o"
 	@echo "... src/game.i"
 	@echo "... src/game.s"

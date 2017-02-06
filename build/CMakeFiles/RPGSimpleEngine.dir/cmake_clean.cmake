@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/RPGSimpleEngine.dir/src/engine.c.o"
   "CMakeFiles/RPGSimpleEngine.dir/src/game.c.o"
   "CMakeFiles/RPGSimpleEngine.dir/src/main.c.o"
   "CMakeFiles/RPGSimpleEngine.dir/src/scene.c.o"

@@ -6,13 +6,29 @@
 
 #IncludeRegexTransform: 
 
+../include/engine.h
+SDL2/SDL.h
+-
+game.h
+../include/game.h
+
 ../include/game.h
 SDL2/SDL.h
 -
+scene.h
+../include/scene.h
 
-/home/mateusfccp/Projects/SDL2/rpg_simple_engine/src/game.c
+../include/scene.h
+SDL2/SDL.h
+-
+
+/home/mateusfccp/Projects/SDL2/rpg_simple_engine/src/engine.c
 stdlib.h
 -
+engine.h
+/home/mateusfccp/Projects/SDL2/rpg_simple_engine/src/engine.h
+
+/home/mateusfccp/Projects/SDL2/rpg_simple_engine/src/game.c
 game.h
 /home/mateusfccp/Projects/SDL2/rpg_simple_engine/src/game.h
 
@@ -23,8 +39,8 @@ stdlib.h
 -
 SDL2/SDL.h
 -
-game.h
-/home/mateusfccp/Projects/SDL2/rpg_simple_engine/src/game.h
+engine.h
+/home/mateusfccp/Projects/SDL2/rpg_simple_engine/src/engine.h
 
 /home/mateusfccp/Projects/SDL2/rpg_simple_engine/src/scene.c
 

@@ -1,25 +1,38 @@
-#ifndef ENGINE_GAME
-#define ENGINE_GAME
+#ifndef RO_GAME
+#define RO_GAME
 
 #include <SDL2/SDL.h>
+#include "scene.h"
+
+typedef enum {
+	GAME_UNDEFINED,
+	GAME_RUNNING,
+	GAME_PAUSED,
+	GAME_QUITTING
+} GameStatus;
 
 typedef struct {
 	// Constant Variables, they are going to be hard-coded
 	const char* Name;
 	const char* Version;
-	int Subsystems;
+	Uint32 Subsystems;
 
-	// Window variable, for auto-desinitialization
-	SDL_Window* window;
+	// Main window variable, for auto-desinitialization
+	SDL_Window* Window;
+
+	//Main renderer variable, for auto-desinitialization
+	SDL_Renderer* Renderer;
 
 	// Variables that are going to change through game
-	void* Scene;
+	Scene* Scene;
+
+	// The game status variable manages the game status. Whooa! Things like running, paused, quitting.
+	GameStatus Status;
 } Game;
 
-Game* Engine_NewGame (const char*, const char*, int);
-void Engine_Initialize (Game*);
-void Engine_Quit (Game* game);
-void Engine_LogInfo(const char*);
-void Engine_LogError (const char*);
+Game* Game_New (const char*, const char*, Uint32);
+void Game_Start(Game*, Scene*);
+void Game_PushScene (Game*, Scene*);
+void Game_PullScene (Game*);
 
 #endif

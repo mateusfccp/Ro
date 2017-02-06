@@ -57,9 +57,33 @@ include CMakeFiles/RPGSimpleEngine.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/RPGSimpleEngine.dir/flags.make
 
+CMakeFiles/RPGSimpleEngine.dir/src/engine.c.o: CMakeFiles/RPGSimpleEngine.dir/flags.make
+CMakeFiles/RPGSimpleEngine.dir/src/engine.c.o: ../src/engine.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mateusfccp/Projects/SDL2/rpg_simple_engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/RPGSimpleEngine.dir/src/engine.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RPGSimpleEngine.dir/src/engine.c.o   -c /home/mateusfccp/Projects/SDL2/rpg_simple_engine/src/engine.c
+
+CMakeFiles/RPGSimpleEngine.dir/src/engine.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/RPGSimpleEngine.dir/src/engine.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mateusfccp/Projects/SDL2/rpg_simple_engine/src/engine.c > CMakeFiles/RPGSimpleEngine.dir/src/engine.c.i
+
+CMakeFiles/RPGSimpleEngine.dir/src/engine.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/RPGSimpleEngine.dir/src/engine.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mateusfccp/Projects/SDL2/rpg_simple_engine/src/engine.c -o CMakeFiles/RPGSimpleEngine.dir/src/engine.c.s
+
+CMakeFiles/RPGSimpleEngine.dir/src/engine.c.o.requires:
+
+.PHONY : CMakeFiles/RPGSimpleEngine.dir/src/engine.c.o.requires
+
+CMakeFiles/RPGSimpleEngine.dir/src/engine.c.o.provides: CMakeFiles/RPGSimpleEngine.dir/src/engine.c.o.requires
+	$(MAKE) -f CMakeFiles/RPGSimpleEngine.dir/build.make CMakeFiles/RPGSimpleEngine.dir/src/engine.c.o.provides.build
+.PHONY : CMakeFiles/RPGSimpleEngine.dir/src/engine.c.o.provides
+
+CMakeFiles/RPGSimpleEngine.dir/src/engine.c.o.provides.build: CMakeFiles/RPGSimpleEngine.dir/src/engine.c.o
+
+
 CMakeFiles/RPGSimpleEngine.dir/src/game.c.o: CMakeFiles/RPGSimpleEngine.dir/flags.make
 CMakeFiles/RPGSimpleEngine.dir/src/game.c.o: ../src/game.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mateusfccp/Projects/SDL2/rpg_simple_engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/RPGSimpleEngine.dir/src/game.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mateusfccp/Projects/SDL2/rpg_simple_engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/RPGSimpleEngine.dir/src/game.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RPGSimpleEngine.dir/src/game.c.o   -c /home/mateusfccp/Projects/SDL2/rpg_simple_engine/src/game.c
 
 CMakeFiles/RPGSimpleEngine.dir/src/game.c.i: cmake_force
@@ -83,7 +107,7 @@ CMakeFiles/RPGSimpleEngine.dir/src/game.c.o.provides.build: CMakeFiles/RPGSimple
 
 CMakeFiles/RPGSimpleEngine.dir/src/main.c.o: CMakeFiles/RPGSimpleEngine.dir/flags.make
 CMakeFiles/RPGSimpleEngine.dir/src/main.c.o: ../src/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mateusfccp/Projects/SDL2/rpg_simple_engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/RPGSimpleEngine.dir/src/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mateusfccp/Projects/SDL2/rpg_simple_engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/RPGSimpleEngine.dir/src/main.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RPGSimpleEngine.dir/src/main.c.o   -c /home/mateusfccp/Projects/SDL2/rpg_simple_engine/src/main.c
 
 CMakeFiles/RPGSimpleEngine.dir/src/main.c.i: cmake_force
@@ -107,7 +131,7 @@ CMakeFiles/RPGSimpleEngine.dir/src/main.c.o.provides.build: CMakeFiles/RPGSimple
 
 CMakeFiles/RPGSimpleEngine.dir/src/scene.c.o: CMakeFiles/RPGSimpleEngine.dir/flags.make
 CMakeFiles/RPGSimpleEngine.dir/src/scene.c.o: ../src/scene.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mateusfccp/Projects/SDL2/rpg_simple_engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/RPGSimpleEngine.dir/src/scene.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mateusfccp/Projects/SDL2/rpg_simple_engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/RPGSimpleEngine.dir/src/scene.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/RPGSimpleEngine.dir/src/scene.c.o   -c /home/mateusfccp/Projects/SDL2/rpg_simple_engine/src/scene.c
 
 CMakeFiles/RPGSimpleEngine.dir/src/scene.c.i: cmake_force
@@ -131,6 +155,7 @@ CMakeFiles/RPGSimpleEngine.dir/src/scene.c.o.provides.build: CMakeFiles/RPGSimpl
 
 # Object files for target RPGSimpleEngine
 RPGSimpleEngine_OBJECTS = \
+"CMakeFiles/RPGSimpleEngine.dir/src/engine.c.o" \
 "CMakeFiles/RPGSimpleEngine.dir/src/game.c.o" \
 "CMakeFiles/RPGSimpleEngine.dir/src/main.c.o" \
 "CMakeFiles/RPGSimpleEngine.dir/src/scene.c.o"
@@ -138,12 +163,13 @@ RPGSimpleEngine_OBJECTS = \
 # External object files for target RPGSimpleEngine
 RPGSimpleEngine_EXTERNAL_OBJECTS =
 
+RPGSimpleEngine: CMakeFiles/RPGSimpleEngine.dir/src/engine.c.o
 RPGSimpleEngine: CMakeFiles/RPGSimpleEngine.dir/src/game.c.o
 RPGSimpleEngine: CMakeFiles/RPGSimpleEngine.dir/src/main.c.o
 RPGSimpleEngine: CMakeFiles/RPGSimpleEngine.dir/src/scene.c.o
 RPGSimpleEngine: CMakeFiles/RPGSimpleEngine.dir/build.make
 RPGSimpleEngine: CMakeFiles/RPGSimpleEngine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mateusfccp/Projects/SDL2/rpg_simple_engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable RPGSimpleEngine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mateusfccp/Projects/SDL2/rpg_simple_engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable RPGSimpleEngine"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RPGSimpleEngine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -151,6 +177,7 @@ CMakeFiles/RPGSimpleEngine.dir/build: RPGSimpleEngine
 
 .PHONY : CMakeFiles/RPGSimpleEngine.dir/build
 
+CMakeFiles/RPGSimpleEngine.dir/requires: CMakeFiles/RPGSimpleEngine.dir/src/engine.c.o.requires
 CMakeFiles/RPGSimpleEngine.dir/requires: CMakeFiles/RPGSimpleEngine.dir/src/game.c.o.requires
 CMakeFiles/RPGSimpleEngine.dir/requires: CMakeFiles/RPGSimpleEngine.dir/src/main.c.o.requires
 CMakeFiles/RPGSimpleEngine.dir/requires: CMakeFiles/RPGSimpleEngine.dir/src/scene.c.o.requires
