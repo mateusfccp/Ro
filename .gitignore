@@ -1,0 +1,4 @@
+/build/
+/resources/
+.atom-build.json
+.clang_complete
