@@ -15,7 +15,7 @@ void Engine_Initialize (Game* game) {
 		SDL_WINDOWPOS_CENTERED,      // initial y position
 		640,                         // width, in pixels
 		480,                         // height, in pixels
-		NULL                // flags - see below
+		NULL                         // flags - see below
 	);
 
 	// Verify if Windows has been properly created
@@ -46,9 +46,9 @@ void Engine_Quit (Game* game) {
 }
 
 void Engine_LogInfo (const char* message) {
-	SDL_Log("Error: %s\n\t%s\n", message, SDL_GetError());
+	SDL_Log("%s\n\t%s\n", message, SDL_GetError());
 }
 
 void Engine_LogError (const char* message) {
-	SDL_LogError(SDL_LOG_CATEGORY_ERROR, "Error: %s\n\t%s\n", message, SDL_GetError());
+	SDL_LogError(SDL_LOG_CATEGORY_ERROR, "%s\n\t%s\n", message, SDL_GetError());
 }

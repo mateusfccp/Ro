@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <SDL2/SDL.h>
 #include "engine.h"
+#include "test_scene.h"
 
 int main (int argc, char** argv) {
 
@@ -13,6 +14,7 @@ int main (int argc, char** argv) {
 
 	SDL_Event e;
 	Engine_Initialize (game);
+	Game_Start(game, test_scene_new());
 
 	//Here starts the main loop
 	while (game->Status != GAME_QUITTING) {
@@ -23,9 +25,9 @@ int main (int argc, char** argv) {
 			game->Status == GAME_QUITTING;
 		}
 
-		game->Scene->events_update(e);
-		game->Scene->logic_update();
-		game->Scene->render();
+		game->Scene->events_update(game->Scene);
+		game->Scene->logic_update(game->Scene);
+		game->Scene->render(game->Scene);
 		/*
 		SDL_RenderClear(game->Renderer);
 		SDL_RenderPresent(game->Renderer);
@@ -36,6 +38,7 @@ int main (int argc, char** argv) {
 			break;
 		}
 		*/
+		Game_PullScene(game);
 	}
 	Engine_Quit(game);
 	return 0;

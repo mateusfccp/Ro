@@ -5,16 +5,17 @@
 
 // This struct defines how a Scene will work
 typedef struct _Scene {
-
 	// The functions associated with the Scene
-	void (*start)(void);
-	void (*logic_update)(void);
-	void (*events_update)(SDL_Event);
-	void (*render)(void);
-	void (*exit)(void);
+	void (*start)(struct _Scene* self);
+	void (*logic_update)(struct _Scene* self);
+	void (* events_update)(struct _Scene* self);
+	void (* render)(struct _Scene* self);
+	void (* exit)(struct _Scene* self);
 
 	// The Scene struct has a link with the previous scene, so it can be pushed/pulled
 	struct _Scene* previous;
 } Scene;
+
+Scene* Scene_New(void (*start)(struct _Scene* self), void (*logic_update)(struct _Scene* self), void (*events_update)(struct _Scene* self), void (*render)(struct _Scene* self), void (*exit)(struct _Scene* self));
 
 #endif
