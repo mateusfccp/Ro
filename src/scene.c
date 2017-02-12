@@ -12,5 +12,6 @@ Scene* Scene_New(void (*start)(struct _Scene* self),
 	scene->render = render;
 	scene->exit = exit;
 	scene->previous = (Scene*) NULL;
+	scene->data = (void*) NULL;
 	return scene;
 }
