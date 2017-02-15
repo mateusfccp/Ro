@@ -6,11 +6,14 @@ Game* Game_New (const char* name, const char* version, Uint32 subsystems) {
 	game->Version = version;
 	game->Subsystems = subsystems;
 	game->Status = GAME_UNDEFINED;
+	game->Renderer = (SDL_Renderer*) NULL;
+	game->Scene = (Scene*) NULL;
 	return game;
 }
 
 void Game_Start (Game* game, Scene* scene) {
-	game->Scene = scene;
+	Game_PushScene(game, scene);
+	game->Scene->start(game->Scene);
 	game->Status = GAME_RUNNING;
 }
 

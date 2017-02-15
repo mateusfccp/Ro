@@ -18,11 +18,12 @@ int main (int argc, char** argv) {
 
 	//Here starts the main loop
 	while (game->Status != GAME_QUITTING) {
-
+		
 		// The main loop will automatically quit when no scene can be found.
 		if(game->Scene == NULL) {
 			Engine_LogInfo("The engine has no scene. Exiting game.");
-			game->Status == GAME_QUITTING;
+			game->Status = GAME_QUITTING;
+			continue;
 		}
 
 		game->Scene->events_update(game->Scene);

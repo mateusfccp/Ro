@@ -1,6 +1,8 @@
 project (RoEngine)
 cmake_minimum_required (VERSION 3.6)
 
+set(CMAKE_BUILD_TYPE Debug)
+
 include(FindPkgConfig)
 pkg_search_module(SDL2 REQUIRED sdl2)
 pkg_search_module(SDL2IMAGE REQUIRED SDL2_image>=2.0.0)
