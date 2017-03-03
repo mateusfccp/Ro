@@ -5,7 +5,7 @@ It's currently in initial state, and I'm really newbie at SDL2, so it may have b
 
 ## Why the name Ro?
 
-I have never been very good at naming my programs. This is no excepetion.
+I have never been very good at naming my programs. This is no exception.
 
 ## What are the advantages of using Ro?
 
